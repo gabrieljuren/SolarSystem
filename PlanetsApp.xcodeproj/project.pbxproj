@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		282E4CDA275B13C700508BEE /* DetailPlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E4CD9275B13C700508BEE /* DetailPlanetView.swift */; };
 		28E46875275AB54D005EBD4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E46874275AB54D005EBD4E /* AppDelegate.swift */; };
 		28E46877275AB54D005EBD4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E46876275AB54D005EBD4E /* SceneDelegate.swift */; };
 		28E46879275AB54D005EBD4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E46878275AB54D005EBD4E /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		282E4CD9275B13C700508BEE /* DetailPlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlanetView.swift; sourceTree = "<group>"; };
 		28E46871275AB54D005EBD4E /* PlanetsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E46874275AB54D005EBD4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E46876275AB54D005EBD4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		28E46873275AB54D005EBD4E /* PlanetsApp */ = {
 			isa = PBXGroup;
 			children = (
+				282E4CD9275B13C700508BEE /* DetailPlanetView.swift */,
 				28E46874275AB54D005EBD4E /* AppDelegate.swift */,
 				28E46876275AB54D005EBD4E /* SceneDelegate.swift */,
 				28E46878275AB54D005EBD4E /* ViewController.swift */,
@@ -261,6 +264,7 @@
 				28E46879275AB54D005EBD4E /* ViewController.swift in Sources */,
 				28E46875275AB54D005EBD4E /* AppDelegate.swift in Sources */,
 				28E46877275AB54D005EBD4E /* SceneDelegate.swift in Sources */,
+				282E4CDA275B13C700508BEE /* DetailPlanetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
