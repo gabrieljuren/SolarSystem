@@ -110,15 +110,6 @@ class DetailPlanetView : UIViewController {
         return label
     }()
     
-    private lazy var labelDescription: UILabel = {
-        let label = UILabel()
-        label.text = "Planet Info"
-        label.textAlignment = .center
-        label.textColor = .white
-        label.font = UIFont(name:"HelveticaNeue-Bold", size: 22.0)
-        return label
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 28/255, green: 28/255, blue: 28/255, alpha: 1.0)

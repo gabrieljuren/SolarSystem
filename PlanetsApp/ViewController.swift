@@ -59,15 +59,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return planets.count
         }
         
-        print(moons.count)
         return moons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "UITableViewCell")
         cell.backgroundColor = UIColor(red: 28/255, green: 28/255, blue: 28/255, alpha: 1.0)
-        
-        print(indexPath.section)
         
         if indexPath.section == 0 {
             cell.textLabel?.text = planets[indexPath.row].englishName
@@ -156,7 +153,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let name: String?
         let englishName: String?
         let isPlanet: Bool
-        //let moons: [String]?
         let semimajorAxis: Float?
         let perihelion: Int?
         let aphelion: Int?
@@ -172,7 +168,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let dimension: String?
         let sideralOrbit: Float?
         let sideralRotation: Float?
-        //let aroundPlanet: [String]?
         let discoveredBy: String?
         let discoveryDate: String?
         let alternativeName: String?
