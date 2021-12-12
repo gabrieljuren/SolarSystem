@@ -67,9 +67,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.backgroundColor = UIColor(red: 28/255, green: 28/255, blue: 28/255, alpha: 1.0)
         
         if indexPath.section == 0 {
-            cell.textLabel?.text = planets[indexPath.row].englishName
+            cell.textLabel?.text = planets[indexPath.row].englishName == "" ? planets[indexPath.row].name
+                                                                            : planets[indexPath.row].englishName
         } else if indexPath.section == 1 {
-            cell.textLabel?.text = moons[indexPath.row].englishName
+            cell.textLabel?.text = moons[indexPath.row].englishName == "" ? moons[indexPath.row].name
+                                                                          : moons[indexPath.row].englishName
         }
         
         cell.accessoryType = .disclosureIndicator
@@ -78,10 +80,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         let planetOrMoon: Planets = indexPath.section == 0 ? planets[indexPath.row] : moons[indexPath.row]
+        let planetOrMoonName = planetOrMoon.englishName == "" ? planetOrMoon.name : planetOrMoon.englishName
         
-        let detailPlanetView = DetailPlanetView(englishName: planetOrMoon.englishName,
+        let detailPlanetView = DetailPlanetView(englishName: planetOrMoonName,
                                                 discoveredBy: planetOrMoon.discoveredBy,
                                                 discoveredDate: planetOrMoon.discoveryDate,
                                                 gravity: planetOrMoon.gravity,
@@ -136,7 +138,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
             DispatchQueue.main.async {
-                print(self.moons.count)
                 self.tableView.reloadData()
                 self.actInd.stopAnimating()
             }
